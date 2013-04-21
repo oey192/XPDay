@@ -1,0 +1,39 @@
+name: XPDay
+main: com.andoutay.xpday.XPDay
+version: 0.1.6
+description: >
+            XPDay allows privileged players to increase XP drop rates for a day.
+
+commands:
+  xpday:
+    description: Set or reset xp rates for the day
+    usage: /<command> <set|reset> [rate]
+
+permissions:
+  xpday.*:
+    description: Gives access to all xpday commands
+    default: false
+    children:
+      xpday.modify: true
+      xpday.view: true
+      xpday.reload: true
+      xpday.version: true
+      xpday.help: true
+  xpday.modify:
+    description: Allows players to change the global xp rate for the server
+    default: false
+  xpday.view:
+    description: Allows players to see when the xp drop rate changes
+    default: false
+  xpday.check:
+    description: Allows players to check the global xp rate
+    default: false
+  xpday.reload:
+    description: Allows players to reload the config
+    default: false
+  xpday.version:
+    description: Allows players to view the plugin version
+    default: false
+  xpday.help:
+    description: Allows players to view the help for the plugin
+    default: false

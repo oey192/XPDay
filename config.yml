@@ -1,0 +1,5 @@
+rate: 1
+minRate: 0.5
+maxRate: 2
+autoDisable: true
+disableDate: '0000-00-00'
